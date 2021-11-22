@@ -14,6 +14,6 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(`.row`, {
+sr.reveal(`.hero-content,.experts,.locations `, {
   interval: 200,
 });
