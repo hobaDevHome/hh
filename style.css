@@ -176,9 +176,8 @@ nav {
 }
 
 
-/* ///////////// */
-
-/* //////////// */
+/* ======================================================
+====================================================== */
 
 .hero {
   height: 100vh;
@@ -259,6 +258,8 @@ nav {
 .bton2:hover {
   background-color: #5e4ae3;
 }
+/* ======================================================
+====================================================== */
 /* stats */
 .stats {
   display: grid;
@@ -287,7 +288,8 @@ nav {
   font-size: 20px;
   font-weight: bold;
 }
-
+/* ======================================================
+====================================================== */
 /* experts */
 .experts {
   background: var(--footer) url("./images/ex_bg.jpg");
@@ -337,6 +339,8 @@ nav {
 .experts .vacancies {
   margin-top: 40px;
 }
+/* ======================================================
+====================================================== */
 /* solutions */
 .sol {
   background: var(--signature) url("./images/dev_bg.jpg");
@@ -355,10 +359,11 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
+/* ======================================================
+====================================================== */
 /* locations */
 .locations {
   width: 100%;
-
   background-color: white;
 }
 .locations-div {
@@ -456,6 +461,8 @@ nav {
 .read-div h4 {
   padding: 5px 20px;
 }
+/* ======================================================
+====================================================== */
 /* carousel */
 .references {
   display: flex;
@@ -512,6 +519,8 @@ nav {
 .slid img:hover {
   transform: translateZ(20px);
 }
+/* ======================================================
+====================================================== */
 /* careers */
 .careers {
   background-color: var(--signature);
@@ -580,6 +589,8 @@ nav {
   font-size: 25px;
   padding: 15px;
 }
+/* ======================================================
+====================================================== */
 /* send */
 .send {
   background-color: var(--ligntOrange);
@@ -621,22 +632,26 @@ nav {
   width: auto;
   transition: all 0.5s;
   position: relative;
+  cursor: pointer;
 }
 .you:hover {
   color: var(--ligntOrange);
   background-color: white;
 }
-.you .time {
-  padding: 0 30px;
+.time {
+  padding: 0 10px;
   border-right: 2px solid white;
+padding-top: 5px;
 }
 .you .tel {
-  padding: 10px;
+  padding:0 10px;
 }
 
 .you .tel i {
   font-size: 30px;
 }
+/* ======================================================
+====================================================== */
 /* footer */
 
 .loc,
@@ -777,4 +792,156 @@ nav {
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
+  .hh,.loc,.footer-blog,.footer-lins{
+    justify-items: center;
+    justify-self: center;
+    text-align: center;
+    border-left: none;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 10px;
+  }
+
+  .send{
+    justify-items: center;
+    justify-self: center;
+ 
+  }
+  .we,
+.you {
+  width: 95%;
+}
+.we h4{
+  font-size: 12px
+}
+.we p{
+  font-size: 20px;
+}
+.we p span {
+  font-size: 22px;
+}
+.you{
+  width: 250px;
+   margin-left: 10px;
+  justify-self: left;
+
+}
+.you p{
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.you .time {
+  width: 90%;
+  padding: 0 10px;
+  border-right: 2px solid white;
+  padding-top: 5px;
+  
+}
+.you .tel {
+  padding: 0px 10px;
+  align-self: center;
+}
+.you .tel i {
+  font-size:15px;
+}
+.careers {
+  flex-direction: column;
+}
+.image {
+ display: none;
+}
+.locations-div {
+  width: 90%;
+  flex-direction: column;
+}
+.col-left h1 {
+  font-size: 25px;
+ 
+}
+.country {
+   flex-direction: column;
+}
+.flag {
+  align-self: flex-start;
+  width: 200px;
+}
+.coutry-data h3 {
+  
+  font-size: 18px;
+}
+.coutry-data p {
+  font-size: 12px;
+  
+}
+.read-div {  
+  width: 70%;
+
+}
+
+.read-div i {
+  font-size: 20px;
+  padding: 5px 10px;
+}
+.read-div h4 {
+  padding: 5px 10px;
+}
+/* experts */
+.experts {
+  background-image: none;
+  background-attachment: fixed;  
+   padding-left: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.exp-data {
+  margin-left: 10px;
+  width: 90%;
+}
+.sol {
+  background: var(--signature) ;
+}
+.exp-data.sol-data {
+  padding-right: 20px;
+}
+/* ================ */
+/* ================ */
+/* ================ */
+.hero { 
+  height: 100%;
+  width: 100%;
+ 
+}
+.hero-content {
+  margin: 0px auto;
+  width: 80%;
+}
+.pars p {
+  font-size: 14px;
+}
+.btons {
+ flex-direction: column;
+ padding-bottom: 30px;
+}
+.bton {
+
+  font-size: 14px;
+  margin-bottom: 30px;
+
+}
+.bton1 {
+  color: #d1d646;
+  border: 2px solid #d1d646;
+}
+.bton1:hover {
+  background-color: #d1d646;
+  color: white;
+}
+.bton2 {
+  color: white;
+  border: 2px solid #5e4ae3;
+}
+.bton2:hover {
+  background-color: #5e4ae3;
+}
+
 }

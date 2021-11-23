@@ -1,6 +1,6 @@
-document.querySelector('#menu').addEventListener('click', () => {
-  document.querySelector('nav ul').classList.toggle('showmenu');
-});
+// document.querySelector('#menu').addEventListener('click', () => {
+//   document.querySelector('nav ul').classList.toggle('showmenu');
+// });
 
 // document.querySelector('#men').addEventListener('click', () => {
 //   document.querySelector('nav ul').classList.toggle('showmenu');
