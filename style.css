@@ -55,6 +55,8 @@ img {
 }
 
 /* hero */
+/* ======================================================
+====================================================== */
 /* Scroll top */
 .scrolltop {
   position: fixed;
@@ -86,31 +88,10 @@ img {
   visibility: visible;
   bottom: 5rem;
 }
+/* ======================================================
+====================================================== */
 /* == nav ===== */
-.nav__toggle{
-  font-size: 1.3rem;
-  cursor: pointer;
-}
 
-/* Show menu */
-.show-menu{
-  top: 50px;
-}
-@media screen and (max-width: 768px){
-  .nav__menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.5rem 0 1rem;
-    text-align: center;
-    background-color: rgba(230, 224, 224, 0.6);
-    transition: .4s;
-    box-shadow: 0 4px 4px rgba(0,0,0,.1);
-    border-radius: 0 0 1rem 1rem;
-    z-index: 10;
-  }
-}
 
 #home {
   width: 60%;
@@ -943,5 +924,30 @@ padding-top: 5px;
 .bton2:hover {
   background-color: #5e4ae3;
 }
+
+/* =========================== */
+/* =========================== */
+/* =========================== */
+#home {
+  width: 100%; 
+  padding-top: 10px;
+}
+
+nav {
+ flex-direction: column;
+}
+#men {
+margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  align-items: center;
+}
+#men li {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
 
 }
