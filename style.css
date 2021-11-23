@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
 /* Base Styling */
 :root {
   --ligntOrange: #f69031;
   --darkOrange: #ec811e;
   --footer: #212121;
   --signature: #303030;
-  --greyText: #a2a2a2;
+  --greyText: #a2a2a2; 
+  --btnwidth: 250px;
+
+
+--btnheight: 80px;
+--btnfull: 330px;
+--btnhalf: 165px;
+--bgcolor: #eeeeee;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -27,17 +36,13 @@ html {
 }
 a {
   text-decoration: none;
-  font-weight: 400;
+  /* font-weight: 400;
   /* 1.6*10 = 16px */
   font-size: 1.6rem;
-  color: whitesmoke;
+  color: whitesmoke; */
 }
 
-h1,
-h2,
-p {
-  margin: 1.6rem 0;
-}
+
 
 p {
   font-weight: 400;
@@ -50,6 +55,63 @@ img {
 }
 
 /* hero */
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  background: rgba(97, 100, 99, 0.5);
+  border-radius: 0.4rem;
+  z-index: 10;
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+.scrolltop:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.scrolltop__icon {
+  font-size: 3rem;
+  color: white;
+}
+
+/* Show scrolltop */
+.show-scroll {
+  visibility: visible;
+  bottom: 5rem;
+}
+/* == nav ===== */
+.nav__toggle{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* Show menu */
+.show-menu{
+  top: 50px;
+}
+@media screen and (max-width: 768px){
+  .nav__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0 1rem;
+    text-align: center;
+    background-color: rgba(230, 224, 224, 0.6);
+    transition: .4s;
+    box-shadow: 0 4px 4px rgba(0,0,0,.1);
+    border-radius: 0 0 1rem 1rem;
+    z-index: 10;
+  }
+}
+
 #home {
   width: 60%;
   margin: 0 auto;
@@ -74,18 +136,46 @@ nav {
 }
 #men li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .link {
   color: white;
   font-size: 15px;
-  transition: all 0.5s;
-  font-weight: bold;
+  transition: all 0.5s;  
   position: relative;
-  -webkit-transition: ease-out 1s;
-  -moz-transition: ease-out 1s;
-  transition: ease-out 1s;
+  -webkit-transition: ease-out .7s;
+  -moz-transition: ease-out .7s;
+  transition: ease-out .7s;
 }
+.link i{
+  font-size: 15px;
+  color: white;
+}
+.button_slide {
+  color: #FFF;  
+  border-radius: 0px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: inline-block;
+  box-shadow: inset 0 0 0 0 var(--ligntOrange);
+  -webkit-transition: ease-out 0.7s;
+  -moz-transition: ease-out 0.7s;
+  transition: ease-out 0.7s;
+}
+.link:hover{
+  color: white;
+}
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 var(--ligntOrange);
+}
+
+#outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+
+
 /* ///////////// */
 
 /* //////////// */
@@ -268,7 +358,7 @@ nav {
 /* locations */
 .locations {
   width: 100%;
-  height: 100vh;
+
   background-color: white;
 }
 .locations-div {
@@ -452,7 +542,6 @@ nav {
 .working p:first-child span {
   font-size: 40px;
   font-weight: normal;
-  font-style: oblique;
 }
 .working p {
   margin: 0;
@@ -555,6 +644,10 @@ nav {
 .footer-blog {
   padding-left: 50px;
   border-left: 0.5px solid rgba(156, 154, 154, 0.5);
+}
+.hh img {
+  width: 120px;
+  margin-bottom: 10px;
 }
 .hh p {
   font-size: 12px;
@@ -674,6 +767,11 @@ nav {
   align-items: center;
   background-color: var(--signature);
   color: var(--greyText);
+  height: 50px;
+}
+.signature p {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 /* Media Queries */
