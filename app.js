@@ -7,6 +7,12 @@ document.querySelector('#men').addEventListener('click', () => {
   document.querySelector('nav').classList.toggle('showmenu');
 });
 
+/*==================== prevent scroll horizonatl ====================*/
+var scrollEventHandler = function () {
+  window.scroll(0, window.pageYOffset);
+};
+
+window.addEventListener('scroll', scrollEventHandler, false);
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
   origin: 'top',
