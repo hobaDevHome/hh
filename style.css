@@ -111,6 +111,18 @@ nav {
   align-items: center;
   flex-direction: row;
   padding-top: 10px;
+  position: relative;
+}
+#menu{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+
+
+}
+.showmenu #men{
+  left:100%
 }
 #men {
   display: flex;
@@ -891,10 +903,12 @@ padding-top: 5px;
   height: 100%;
   width: 100%;
  
+ 
 }
 .hero-content {
   margin: 0px auto;
   width: 80%;
+   margin-top: 50px;
 }
 .pars p {
   font-size: 14px;
@@ -928,6 +942,10 @@ padding-top: 5px;
 /* =========================== */
 /* =========================== */
 /* =========================== */
+#menu{
+  display: block;
+}
+
 #home {
   width: 100%; 
   padding-top: 10px;
@@ -937,15 +955,27 @@ nav {
  flex-direction: column;
 }
 #men {
+  background-color: rgba(221, 212, 212, .8);
+  width: 80%;
 margin-top: 20px;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
   align-items: center;
+  position: absolute;
+  border-radius: 10px;  
+  top: 20px;
+  left: -100%;
+
 }
 #men li {
   display: inline-block;
   margin-top: 10px;
+}
+#men li a{
+  
+  color: black;
+  font-weight: 400;
 }
 
 
