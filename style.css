@@ -116,7 +116,7 @@ nav {
   display: none;
 }
 .showmenu #men {
-  left: 100%;
+  left: 10%;
 }
 #men {
   display: flex;
@@ -940,7 +940,7 @@ nav {
     flex-direction: column;
   }
   #men {
-    background-color: rgba(221, 212, 212, 0.8);
+    background-color: rgba(61, 59, 59, 0.9);
     width: 80%;
     margin-top: 20px;
     display: flex;
@@ -957,7 +957,6 @@ nav {
     margin-top: 10px;
   }
   #men li a {
-    color: black;
     font-weight: 400;
   }
 }
