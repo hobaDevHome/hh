@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 /* Base Styling */
 :root {
   --ligntOrange: #f69031;
@@ -15,7 +15,9 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -47,42 +49,38 @@ img {
   height: auto;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  align-items: center;
-  margin: auto;
-}
-
-section {
-  padding: 100px 0;
-}
-
 /* hero */
 #home {
   width: 60%;
   margin: 0 auto;
   padding-top: 20px;
 }
+#logo {
+  width: 200px;
+}
+#home img {
+  width: 100%;
+  height: auto;
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 #men {
   display: flex;
 }
 #men li {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 .link {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   transition: all 0.5s;
+  font-weight: bold;
   position: relative;
   -webkit-transition: ease-out 1s;
   -moz-transition: ease-out 1s;
@@ -96,7 +94,7 @@ nav {
   height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
-    url('images/headerbg.jpg');
+    url("images/headerbg.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,32 +108,33 @@ nav {
   padding: 0;
 }
 .hero-content {
-  margin: 150px auto;
+  margin: 80px auto;
   width: 60%;
 }
+
 .hero-content h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
   color: var(--ligntOrange);
 }
 .hero-content h1 span.light {
   font-weight: 100;
-  font-size: 50px;
+  font-size: 40px;
   color: white;
 }
 .hero-content h1 span.bold {
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
 }
 .pars {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .pars p {
   font-size: 19px;
 }
 .btons {
-  margin-top: 70px;
+  margin-top: 50px;
   display: flex;
   justify-content: left;
 }
@@ -201,7 +200,7 @@ nav {
 
 /* experts */
 .experts {
-  background: var(--footer) url('./images/ex_bg.jpg');
+  background: var(--footer) url("./images/ex_bg.jpg");
   background-attachment: fixed;
   height: 90vh;
   background-position: bottom right;
@@ -250,7 +249,7 @@ nav {
 }
 /* solutions */
 .sol {
-  background: var(--signature) url('./images/dev_bg.jpg');
+  background: var(--signature) url("./images/dev_bg.jpg");
 }
 .exp-data.sol-data {
   align-items: flex-end;
@@ -434,7 +433,7 @@ nav {
 
 .image {
   min-height: 500px;
-  background: white url('./images/careers.jpg');
+  background: white url("./images/careers.jpg");
   background-repeat: no-repeat;
   flex: 1;
   flex-basis: 50%;
@@ -652,7 +651,7 @@ nav {
 .p2:hover::before,
 .p3:hover::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 3px;
   height: 40px;
   background-color: var(--ligntOrange);
@@ -662,7 +661,7 @@ nav {
 .p1:hover::before {
   height: 20px;
   position: absolute;
-  content: '';
+  content: "";
   width: 3px;
 
   background-color: var(--ligntOrange);
